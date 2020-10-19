@@ -1,0 +1,41 @@
+GET http://localhost:3001/api/persons
+
+###
+
+GET http://localhost:3001/api/persons/2
+
+###
+
+DELETE http://localhost:3001/api/volunteer/5f7b4e4bcb54102c980366e6
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Foyez Ahmed",
+  "number": "11-2234-234"
+}
+
+###
+
+POST http://localhost:3001/api/isAdmin
+Content-Type: application/json
+
+{
+  "email": "foyez.lifestyle1@gmail.com"
+}
+
+###
+
+GET http://localhost:3001/api/orders
+
+###
+
+PUT http://localhost:3001/api/orders/5f8b165308f9eb1c2b9dca12
+Content-Type: application/json
+
+{
+  "status": "Ongoing"
+}
