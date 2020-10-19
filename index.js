@@ -39,7 +39,7 @@ app.use(fileUpload())
 
 app.get('/api/reviews', (req, res) => {
   Review.find({})
-    .sort({ createdAt: 'desc' })
+    .sort({ createAt: 'desc' })
     .then((reviews) => {
       res.json(reviews.slice(0, 3))
     })
